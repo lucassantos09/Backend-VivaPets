@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "VivaPetsBackEnd\Api.csproj", "{6049B576-A64C-4B90-AE51-9974A2B82046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{CB26EB31-29E3-4FBD-BA1F-0DAF5C34CCC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositorio", "Repositorio\Repositorio.csproj", "{579266C2-F1D6-4C0A-875A-25E6924DBC87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6049B576-A64C-4B90-AE51-9974A2B82046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6049B576-A64C-4B90-AE51-9974A2B82046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6049B576-A64C-4B90-AE51-9974A2B82046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6049B576-A64C-4B90-AE51-9974A2B82046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB26EB31-29E3-4FBD-BA1F-0DAF5C34CCC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB26EB31-29E3-4FBD-BA1F-0DAF5C34CCC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB26EB31-29E3-4FBD-BA1F-0DAF5C34CCC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB26EB31-29E3-4FBD-BA1F-0DAF5C34CCC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{579266C2-F1D6-4C0A-875A-25E6924DBC87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579266C2-F1D6-4C0A-875A-25E6924DBC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579266C2-F1D6-4C0A-875A-25E6924DBC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579266C2-F1D6-4C0A-875A-25E6924DBC87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6B995EF-E727-45A6-BDB3-FC42F64B8A34}
+	EndGlobalSection
+EndGlobal
