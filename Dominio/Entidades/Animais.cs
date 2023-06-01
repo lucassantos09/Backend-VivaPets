@@ -9,7 +9,6 @@ namespace Dominio.Entidades
         public string Raca{ get; set; }
         public string Cor{ get; set; }
         public Servico Servico { get; set; }
-        public string Responsavel { get; set; }
         public string Telefone{ get; set; }
     }
 }

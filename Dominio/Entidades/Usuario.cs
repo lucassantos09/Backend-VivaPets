@@ -1,4 +1,6 @@
-﻿namespace Dominio.Entidades
+﻿using System.Collections.Generic;
+
+namespace Dominio.Entidades
 {
     public class Usuario
     {
@@ -6,6 +8,7 @@
         public string Email { get; set; }
         public string Senha { get; set; }
         public string Nome { get; set; }
+        public List<Animais> Animais { get; set; }
     }
 }
 

@@ -1,12 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="Servicos\" />
+	  <Folder Include="Interface\" />
+	  <Folder Include="Repositorio\Database\" />
+	  <PackageReference Include="jose-jwt" Version="4.1.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5" />
+	  <PackageReference Include="SQLitePCL" Version="3.8.7.2" />
+	  <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.5" />
+	  <PackageReference Include="SQLitePCLRaw.core" Version="2.1.5" />
+	  <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3" Version="2.1.5" />
+	  <PackageReference Include="SQLitePCLRaw.provider.e_sqlite3" Version="2.1.5" />
   </ItemGroup>
 
 </Project>
