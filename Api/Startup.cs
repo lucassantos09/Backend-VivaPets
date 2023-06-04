@@ -33,6 +33,7 @@ namespace Api
             services.AddControllers();
             services.BuildServiceProvider().MigrateDatabase();
             services.AddTransient<ServicoUsuario>();
+            services.AddTransient<ServicoToken>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

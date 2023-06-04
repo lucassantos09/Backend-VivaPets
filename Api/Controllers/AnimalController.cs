@@ -1,4 +1,5 @@
-﻿using Dominio.Entidades;
+﻿using Api.Auth;
+using Dominio.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -22,6 +23,7 @@ namespace VivaPetsBackEnd.Controllers
         }
 
         [HttpPost]
+        [Autorizar]
         public IActionResult Post(Animais animal)
         {
             try

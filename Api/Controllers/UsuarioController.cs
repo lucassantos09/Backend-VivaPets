@@ -1,4 +1,5 @@
-﻿using Dominio.Entidades;
+﻿using Api.Auth;
+using Dominio.Entidades;
 using Dominio.Servicos;
 using Dominio.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -26,13 +27,13 @@ namespace VivaPetsBackEnd.Controllers
         }
 
         [HttpPost]
+        [Autorizar]
         public IActionResult Post(Usuario usuario)
         {
             try
             {
-                var result = _context.Add(usuario).Entity;
-                _context.SaveChanges();
-                return StatusCode(200, result);
+                var result = _servicoUsuario.Inclui(usuario);
+                return result != null ? StatusCode(200, result) : StatusCode(422);
             }
             catch (Exception)
             {
@@ -63,7 +64,7 @@ namespace VivaPetsBackEnd.Controllers
             try
             {
                 var retorno = _servicoUsuario.Login(login);
-                return retorno != null ? StatusCode(200, retorno) : StatusCode(400);    
+                return retorno != null ? StatusCode(200, retorno) : StatusCode(401);    
             }
             catch (Exception)
             {
